@@ -1,0 +1,42 @@
+## Amz Linux 2023
+## instance with atleast 2GB RAM
+
+#### Install PHP, MySQL, Nginx:
+sudo hostnamectl set-hostname appsrv
+sudo dnf update
+sudo dnf install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+
+### install php with the following commands
+sudo dnf install php8.2 php-fpm php-mysqlnd php-pdo php-mbstring -y
+php -v
+
+sudo systemctl start php-fpm
+sudo systemctl enable php-fpm
+sudo systemctl restart nginx
+
+
+### to create database and table you need the following agent
+sudo yum install mariadb105 -y
+
+### connect to  the database using MySQL agent installed in the above stage
+### copy the contents of file 'init.sql' to create the database and table 
+
+##  copy 'includes'  & 'public' directories to /usr/share/nginx/html/
+
+### use the following commands so that nginx has the required permissions
+sudo chown -R nginx:nginx /usr/share/nginx/html/public
+sudo chmod -R 755 /usr/share/nginx/html/public
+
+
+### update the file quickloan.conf with your domain name
+### copy the file quickloan.conf using the following command 
+sudo cp /usr/share/nginx/html/nginx/quickloan.conf   /etc/nginx/conf.d/
+sudo nginx -t
+sudo systemctl restart nginx
+
+### add db details in the /usr/share/nginx/html/incudes/db_connect.php
+  db_endpoint , username  , password  ,  db_name
+
