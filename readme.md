@@ -218,12 +218,5 @@ try {
 
 ### 🧑‍💻 Author
 
-**Khushal Bhavsar** ✨  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/khushal-bhavsar-/)  
-🐙 [GitHub](https://github.com/Khushal41)
-
-📌 **Project:** Academic / Internship Training – 🚀 AWS Scalable Web App Deployment
-
-
-```
-```
+**Saikiran Rajesh Asamwar**  
+- Full Stack MERN Developer | Python & Cloud Enthusiast  
