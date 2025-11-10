@@ -216,7 +216,15 @@ try {
   - **RDS Logs & Metrics:** Monitor DB performance.
   - **ALB Access Logs:** Monitor incoming traffic.
 
-### 🧑‍💻 Author
+---
+
+## 👨‍💻 Author
 
 **Saikiran Rajesh Asamwar**  
-- Full Stack MERN Developer | Python & Cloud Enthusiast  
+Certified AWS DevOps Engineer
+
+- 🌐 GitHub: [@SaikiranAsamwar](https://github.com/SaikiranAsamwar)
+- 💼 LinkedIn: [Saikiran Asamwar](https://www.linkedin.com/in/saikiran-asamwar/)
+- 📧 Email: saikiranasamwar@gmail.com
+
+---
